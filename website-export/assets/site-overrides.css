@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap&subset=cyrillic");
+
+:root {
+  --limitless-sans: "Manrope", "Inter", system-ui, sans-serif;
+  --limitless-serif: "Cormorant Garamond", Georgia, serif;
+}
+
+html,
+body {
+  text-rendering: optimizeLegibility;
+}
+
+body.is-ru-localized,
+body.is-ru-localized input,
+body.is-ru-localized textarea,
+body.is-ru-localized button,
+body.is-ru-localized select {
+  font-family: var(--limitless-sans);
+}
+
+body.is-ru-localized .framer-text,
+body.is-ru-localized [data-framer-component-type="RichTextContainer"],
+body.is-ru-localized [data-framer-component-type="Text"] {
+  -webkit-font-smoothing: antialiased;
+  font-synthesis: none;
+}
+
+#__framer-badge-container,
+.framer-bmpgw8.__framer-badge {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+}
